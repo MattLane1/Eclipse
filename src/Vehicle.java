@@ -9,27 +9,80 @@
 
 public class Vehicle {
 	
+	//Decelerations ++++++++++++++++++++++++++++++++++++++++++++++++=
+	
 	//Finals
-	final int MAX_SPEED = 40;
+	private final int MAX_SPEED = 40;
 	
 	//Integers
-	int numWheels = 4;
-	int numDoors = 2;
+	private int numWheels = 4;
+	private int numDoors = 2;
 	
 	//Strings
-	String colour = "";
-	String make = "";
-	String model = "";
-	String year = "";
+	private String colour = "";
+	private String make = "";
+	private String model = "";
+	private String year = "";
 	
 	//Floats
-	float speed = 0;
+	private float speed = 0;
 	
-	
-	//Constructor
+	//Constructor ++++++++++++++++++++++++++++++++++++++
 	public Vehicle(){
 		
 	}
+	
+	//Getters and setters ++++++++++++++++++++++++++++++++++++++++++
+	/**
+	 * @return the number of wheels on the vehicle
+	 */
+	public int getNumWheels() {
+		return this.numWheels;
+	}
+
+	/**
+	 * @return the number of doors
+	 */
+	public int getNumDoors() {
+		return this.numDoors;
+	}
+
+	/**
+	 * @return the colour
+	 */
+	public String getColour() {
+		return this.colour;
+	}
+
+	/**
+	 * @return the model
+	 */
+	public String getModel() {
+		return this.model;
+	}
+
+	/**
+	 * @return the year
+	 */
+	public String getYear() {
+		return this.year;
+	}
+
+	/**
+	 * @return the make
+	 */
+	public String getMake() {
+		return this.make;
+	}
+
+	/**
+	 * @return the make
+	 */
+	public float getSpeed() {
+		return this.speed;
+	}
+	
+	//Functions +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	//Speed the car up
 	public void accelerate(){
@@ -57,6 +110,8 @@ public class Vehicle {
 	public void turnRight(){
 		System.out.println("Turning Right");
 	}
+
+
 	
 	
 	
